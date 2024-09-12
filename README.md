@@ -91,6 +91,40 @@ You can now access the FastAPI application by navigating to http://localhost:800
 
 To view the interactive API documentation provided by FastAPI, go to http://localhost:8000/docs.
 
+# Pushing Docker Image to Docker Hub.
+
+1. **Tag Docker Image.**
+```bash
+docker tag <local-image>:<tag> <username>/<repository>:<tag>
+
+# Check if docker is loggedIn. 
+docker login
+
+# Login workaround if not working with personal access token.
+docker login -u your-username --password your-token
+
+# Login workaround if not working with personal access token.
+docker push <username>/<repository>:<tag>
+
+# Pull docker image from docker hub repositories
+docker pull <username>/<repository>:<tag>
+
+# Run docker container 
+docker run -d -p 8000:8000 --name my-running-app <username>/<repository>:<tag>
+
+# Verify container is running
+docker ps
+
+# Access the Application: http://localhost:8000
+
+#Stop and Remove the Container
+- docker stop my-running-app
+- docker rm my-running-app
+
+# Remove docker image
+docker rmi <username>/<repository>:<tag>
+```
+
 # Additional Resources
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Docker Documentation](https://docs.docker.com/)
