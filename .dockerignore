@@ -1,4 +1,7 @@
+.venv/Lib
+.venv/Scripts
 .venv/
+
 .idea/
 __pycache__/
 

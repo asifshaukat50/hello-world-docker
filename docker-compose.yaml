@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    image: asifshaukat50/hello-world:1.0
+    image: asifshaukat50/hello-world:latest
     command: sh -c "uvicorn main:app --reload --port=8000 --host=0.0.0.0"
     ports:
       - 8000:8000

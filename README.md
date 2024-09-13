@@ -128,5 +128,7 @@ docker rmi <username>/<repository>:<tag>
 # Additional Resources
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Docker Documentation](https://docs.docker.com/)
+- [Docker Cheat Sheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
+- [Bash Command-Line Cheat Sheet](https://cheatography.com/chaosjd/cheat-sheets/batch/)
 
 Feel free to modify the FastAPI application and Docker configuration as needed for your specific use case.
